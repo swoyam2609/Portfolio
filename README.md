@@ -1,7 +1,7 @@
 <h1>Portfolio Site</h1>
 <p>This repository contains the code for my personal portfolio site. The site showcases my professional experience, skills, and projects.</p>
 <h2>Tech Stack</h2>
-<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+<ol><li>HTML</li><li>CSS</li><li>JavaScript</li></ol>
 <h2>Screenshots</h2>
 <img src="pic1.png" width="100%">
 <br>
