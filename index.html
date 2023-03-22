@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Swoyam - Portfolio</title>
-        <link rel="stylesheet" href="port.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <link rel="icon" href="./icon.ico">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="port.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="icon" href="./icon.ico" />
+        <script
+            src="https://kit.fontawesome.com/a076d05399.js"
+            crossorigin="anonymous"
+        ></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: "#da373d",
+                        },
+                    },
+                },
+            };
+        </script>
     </head>
     <body>
         <nav class="navbar">
             <div class="max-width">
-                <div class="logo"><a href="#">Portfo<span>lio.</span></a> </div>
+                <div class="logo">
+                    <a href="#">Portfo<span>lio.</span></a>
+                </div>
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -32,13 +52,17 @@
 
         <!-- Home section of webpage -->
 
-        <section class="home" id="home">
+        <section class="home bg-[url('./homeBanner.png')] bg-black" id="home">
             <div class="max-width">
                 <div class="home-content">
                     <div class="text-1">Hello, My name is</div>
                     <div class="text-2">Swoyam Siddharth</div>
-                    <div class="text-3">And I'm a <span class="typing"></span></div>
-                    <a href="https://github.com/swoyam2609" target="_blank"> Projects</a>
+                    <div class="text-3">
+                        And I'm a <span class="typing"></span>
+                    </div>
+                    <a href="https://github.com/swoyam2609" target="_blank">
+                        Projects</a
+                    >
                 </div>
             </div>
         </section>
@@ -49,25 +73,38 @@
             <div class="max-width">
                 <h2 class="title">About Me</h2>
                 <div class="about-content">
-                   <div class="column left">
-                       <img src="profile.png" alt="Ayusha Kar">
-                   </div>
-                   <div class="column right">
-                       <div class="text">I'm Swoyam and I'm a <span class="typing-2"></span></div>
-                       <p>My greetings to the person reading this. I am Swoyam Siddharth Nayak, currently a CSE Sophomore student at the prestigious International Institute of Information technology Bhubaneswar.
-                        
-                        I aspire to explore, understand, and Excel in the fields of Android development, Product Management, and UI/UX design. With this goal set for me. I am working each day and trying to get a step closer to making it a reality.
-                        
-                        In this journey of mine, I have gained lots of valuable skills in Kotlin, C, C++, Python, HTML, CSS, and Figma. I plan to learn much more in the near future and keep on improving myself.
-                       </p>
-                       <a href="https://drive.google.com/file/d/1-ZmbIdtreqY-AgtWs8YDHuwhMJbhfXBN/view?usp=sharing" target="_blank" >Download CV</a>
-                   </div>
+                    <div class="column left">
+                        <img src="profile.png" alt="Ayusha Kar" />
+                    </div>
+                    <div class="column right">
+                        <div class="text">
+                            I'm Swoyam and I'm a <span class="typing-2"></span>
+                        </div>
+                        <p>
+                            My greetings to the person reading this. I am Swoyam
+                            Siddharth Nayak, currently a CSE Sophomore student
+                            at the prestigious International Institute of
+                            Information technology Bhubaneswar. I aspire to
+                            explore, understand, and Excel in the fields of
+                            Android development, Product Management, and UI/UX
+                            design. With this goal set for me. I am working each
+                            day and trying to get a step closer to making it a
+                            reality. In this journey of mine, I have gained lots
+                            of valuable skills in Kotlin, C, C++, Python, HTML,
+                            CSS, and Figma. I plan to learn much more in the
+                            near future and keep on improving myself.
+                        </p>
+                        <a
+                            href="https://drive.google.com/file/d/1-ZmbIdtreqY-AgtWs8YDHuwhMJbhfXBN/view?usp=sharing"
+                            target="_blank"
+                            >Download CV</a
+                        >
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--Services Section -->  
-
+        <!--Services Section -->
 
         <section class="services" id="services">
             <div class="max-width">
@@ -77,15 +114,27 @@
                         <div class="box">
                             <i class="fas fa-regular fa-mobile"></i>
                             <div class="text">Android (Kotlin)</div>
-                            <p>I provide professional android development services to bring your app idea to life. From concept to launch, I work closely with you to create a high-quality and user-friendly android app that meets your specific needs and goals.</p>
+                            <p>
+                                I provide professional android development
+                                services to bring your app idea to life. From
+                                concept to launch, I work closely with you to
+                                create a high-quality and user-friendly android
+                                app that meets your specific needs and goals.
+                            </p>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="box">
                             <i class="fas fa-regular fa-user"></i>
-                            <div class="text"> Product Management</div>
-                            <p>I provide comprehensive support for businesses looking to develop, launch, and market their products. From idea generation to market analysis, I help in product development process and ensure their products are successful.</p>
+                            <div class="text">Product Management</div>
+                            <p>
+                                I provide comprehensive support for businesses
+                                looking to develop, launch, and market their
+                                products. From idea generation to market
+                                analysis, I help in product development process
+                                and ensure their products are successful.
+                            </p>
                         </div>
                     </div>
 
@@ -93,7 +142,14 @@
                         <div class="box">
                             <i class="fas fa-palette"></i>
                             <div class="text">Graphic Design</div>
-                            <p>I offer professional graphic design services for businesses and individuals looking to enhance their visual branding and marketing materials. I create visually stunning designs that communicate your message and attract your target audience.</p>
+                            <p>
+                                I offer professional graphic design services for
+                                businesses and individuals looking to enhance
+                                their visual branding and marketing materials. I
+                                create visually stunning designs that
+                                communicate your message and attract your target
+                                audience.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -106,10 +162,29 @@
                 <h2 class="title">My Skills</h2>
                 <div class="skills-content">
                     <div class="column left">
-                        <div class="text">My Creative Skills & Experiences.</div>
-                        <p> From a young age, I have had a passion for leadership and mentorship. Throughout my schooling, I have taken on leadership roles, representing my school in various science and debate competitions, and participating in the organizing committee for numerous events. Additionally, I have served as a Campus Ambassador for prestigious institutions and have held leadership positions in college societies, such as being the Graphic and Social Media Lead. Currently, I am a Microsoft Student Learn Ambassador. My coding skills are also noteworthy and can be further discussed.</p>
-                        <a href="https://www.linkedin.com/in/swoyam2609/" target="_blank" >Know more</a>
-                    </div> 
+                        <div class="text">
+                            My Creative Skills & Experiences.
+                        </div>
+                        <p>
+                            From a young age, I have had a passion for
+                            leadership and mentorship. Throughout my schooling,
+                            I have taken on leadership roles, representing my
+                            school in various science and debate competitions,
+                            and participating in the organizing committee for
+                            numerous events. Additionally, I have served as a
+                            Campus Ambassador for prestigious institutions and
+                            have held leadership positions in college societies,
+                            such as being the Graphic and Social Media Lead.
+                            Currently, I am a Microsoft Student Learn
+                            Ambassador. My coding skills are also noteworthy and
+                            can be further discussed.
+                        </p>
+                        <a
+                            href="https://www.linkedin.com/in/swoyam2609/"
+                            target="_blank"
+                            >Know more</a
+                        >
+                    </div>
                     <div class="column right">
                         <div class="bars">
                             <div class="info">
@@ -173,45 +248,62 @@
                 <div class="contact-content">
                     <div class="column left">
                         <div class="text">Get in Touch</div>
-                        <p>Thank you for visiting my portfolio website. If you have any questions or comments about my work, or if you would like to discuss a potential project, please don't hesitate to get in touch. You can reach me by email at below, by phone at <b>+91-7608086659</b>, or by filling out the contact form on this website. I look forward to hearing from you!</p>
+                        <p>
+                            Thank you for visiting my portfolio website. If you
+                            have any questions or comments about my work, or if
+                            you would like to discuss a potential project,
+                            please don't hesitate to get in touch. You can reach
+                            me by email at below, by phone at
+                            <b>+91-7608086659</b>, or by filling out the contact
+                            form on this website. I look forward to hearing from
+                            you!
+                        </p>
                         <div class="icons">
                             <div class="row">
                                 <i class="fas fa-user"></i>
                                 <div class="info">
                                     <div class="head">Name</div>
-                                    <div class="sub-title">Swoyam Siddharth Nayak</div>
+                                    <div class="sub-title">
+                                        Swoyam Siddharth Nayak
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div class="info">
                                     <div class="head">Address</div>
-                                    <div class="sub-title">Bhubaneswar, India</div>
+                                    <div class="sub-title">
+                                        Bhubaneswar, India
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <i class="fas fa-envelope"></i>
                                 <div class="info">
                                     <div class="head">Email</div>
-                                    <div class="sub-title">swoyamsiddharthnayak@gmail.com</div>
+                                    <div class="sub-title">
+                                        swoyamsiddharthnayak@gmail.com
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column right">
-                    </div>
+                    <div class="column right"></div>
                 </div>
             </div>
         </section>
 
-
-
-
-
-
         <!-- Footer Section -->
         <footer>
-            <span>Created By <a href="https://www.instagram.com/self._._.sid/?hl=en" target="_blank">Swoyam Siddharth</a> |  &copy;  2023 All rights reserved.</span>
+            <span
+                >Created By
+                <a
+                    href="https://www.instagram.com/self._._.sid/?hl=en"
+                    target="_blank"
+                    >Swoyam Siddharth</a
+                >
+                | &copy; 2023 All rights reserved.</span
+            >
         </footer>
 
         <script src="port.js"></script>
